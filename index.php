@@ -1,105 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LPU Digital Services Dashboard</title>
-
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        .header {
-            color: white;
-            background-color:red;
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-        }
-        .header img {
-            width: 40px;
-            height: auto;
-            margin-left: 20px;
-        }
-
-        .main {
-            display:flex;
-            align-items:center;
-        }
-        .main__sidebar {
-            height: 100vh;
-            flex: 0.2;
-            z-index: 1;
-            display: flex;
-            flex-direction: column;
-            border-right: 1px solid lightgray;
-        }
-        .main__sidebar__profile {
-            background-color: white;
-            color: black;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 1px solid lightgray;
-            padding: 10px;
-        }
-        .main__sidebar__profile h4,p {
-            text-align: right;
-        }
-
-        .main__sidebar__nav {
-            flex: 1;
-        }
-        .main__sidebar__nav ul {
-            text-decoration: none;
-        }
-        .main__sidebar__nav li {
-            list-style: none;
-        }
-        .main__sidebar__nav li a {
-            text-decoration: none;
-        }
-        .main__sidebar__nav li a:hover {
-            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-        }
-        .main__sidebar__footer {
-            background-color: gray;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <div class="header">
-            <img src="#" alt="logo" />
-            <h1>LPU Digital Services Dashboard</h1>
-        </div>
-    </header>
-    <div class="main">
-        <div class="main__sidebar">
-            <div class="main__sidebar__profile">
-                <img src="#" alt="avatar" />
-                <div>
-                    <h4>Profile Name</h4>
-                    <p>Profile info</p>
+<?php 
+    $title = "Dashboard";
+    include_once('includes/header.php');
+?>
+        <div class="body__container">
+            <section class="container">
+                <div class="top__header">
+                    <div class="banner">
+                        <div class="logo__company">
+                            <a href="https://manila.lpu.edu.ph" target="_self" rel="home">
+                                <img class="desktop-image" src="https://manila.lpu.edu.ph/wp-content/themes/g5_helium/custom/images/above/banner-desktop.png" style="max-height: 87px" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="links">
+                        <div class="links__container">
+                            <div class="links__social">
+                                <a class="social__link" href="https://www.facebook.com/LPUManila" target="_blank" rel="noreferrer" title="Facebook">
+                                    <span id="facebook__icon">f</span>
+                                </a>
+                                <a class="social__link" href="https://www.instagram.com/lpumanilaofficial/" target="_blank" rel="noopener noreferrer" title="Instagram">
+                                    <span id="instagram__icon">📸</span>
+                                </a>
+                                <a class="social__link" href="https://twitter.com/LPUManila" target="_blank" rel="noreferrer" title="Twitter">
+                                    <span id="twitter__icon">🐦</span>
+                                </a>
+                                <a class="social__link" href="https://www.youtube.com/channel/UCKWOZikMw3Myzc1sLNzg6vQ" target="_blank" rel="noopener noreferrer" title="Youtube">
+                                    <span id="youtube__icon">▶️</span>
+                                </a>
+                            </div>
+                            <div class="links__about">
+                                <a class="link" href="https://manila.lpu.edu.ph/contact-info" target="_blank" rel="noopener noreferrer" title="Contact Info">Contact Info</a></li>
+                                <a class="link" href="https://manila.lpu.edu.ph/frequently-asked-questions/" target="_blank" rel="noopener noreferrer" title="Frequently Asked Questions">FAQ</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="main__sidebar__nav">
-                <ul>
-                    <li>Go back to <a href="manila.lpu.edu.ph">manila.lpu.ph</a></li>
-                    <li>Logout</li>
-                </ul>
-            </div>
-            <div class="main__sidebar__footer">
-                <p>Footer</p>
-            </div>
-        </div>
-        <div class="main__content">
-            <h4>Content</h4>
+            </section>
+            <main class="container">
+                <div class="sidebar">
+                    <p>Sidebar</p>
+                </div>
+            </main>
         </div>
     </div>
-    
-</body>
-</html>
+<?php include_once('includes/footer.php'); ?>
